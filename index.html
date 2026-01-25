@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diario Ciclo Mestruale - L'app per monitorare il tuo ciclo mestruale con rispetto per la tua privacy. I tuoi dati restano sul tuo dispositivo.">
+    <meta name="author" content="Fabrizio Di Pietro">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8FA584">
+
+    <title>Diario Ciclo Mestruale - Traccia il tuo ciclo in modo privato</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Diario Ciclo Mestruale">
+    <meta property="og:description" content="Monitora il tuo ciclo mestruale con rispetto per la tua privacy. I tuoi dati restano sul tuo dispositivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/og-image.png">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Diario Ciclo Mestruale">
+    <meta name="twitter:description" content="Monitora il tuo ciclo mestruale con rispetto per la tua privacy.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <select id="lang-selector" aria-label="Seleziona lingua" onchange="if(this.value==='en')window.location='index-en.html'">
+            <option value="it" selected>Italiano</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <!-- Header / Hero Section -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Privacy Badge -->
+            <div class="privacy-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clip-rule="evenodd" />
+                </svg>
+                Privacy al primo posto
+            </div>
+
+            <img src="img/app-icon.png" alt="Diario Ciclo Mestruale" class="app-icon" onerror="this.style.display='none'">
+            <h1>Diario Ciclo Mestruale</h1>
+            <p class="subtitle">Semplice, privato, tuo.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Navigazione principale">
+        <ul class="nav-links">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Termini di Servizio</a></li>
+            <li><a href="support.html">Supporto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Trust Badges Section -->
+    <section class="social-proof" aria-label="Punti di forza">
+        <div class="social-proof-inner">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128274;</span>
+                    <span class="trust-badge-label">Nessun account</span>
+                    <span class="trust-badge-value">richiesto</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128225;</span>
+                    <span class="trust-badge-label">100% Offline</span>
+                    <span class="trust-badge-value">funziona senza internet</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#9940;</span>
+                    <span class="trust-badge-label">Senza pubblicita</span>
+                    <span class="trust-badge-value">nessuna ads</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128065;</span>
+                    <span class="trust-badge-label">Nessun tracciamento</span>
+                    <span class="trust-badge-value">no analytics</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#127873;</span>
+                    <span class="trust-badge-label">Gratuita</span>
+                    <span class="trust-badge-value">senza costi nascosti</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128737;</span>
+                    <span class="trust-badge-label">Dati solo tuoi</span>
+                    <span class="trust-badge-value">mai condivisi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <article class="main-content">
+            <section>
+                <h2>La tua salute, la tua privacy</h2>
+                <p>
+                    Diario Ciclo Mestruale ti permette di monitorare il tuo ciclo mestruale
+                    in modo semplice, intuitivo e completamente privato.
+                </p>
+
+                <div class="card card-highlight">
+                    <h3>Privacy al primo posto</h3>
+                    <p>
+                        I tuoi dati non lasciano mai il tuo dispositivo. Non abbiamo server,
+                        non raccogliamo informazioni, non vendiamo nulla. I tuoi dati sono
+                        solo tuoi.
+                    </p>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section>
+                <h2>Funzionalita principali</h2>
+
+                <div class="features-grid">
+                    <div class="card">
+                        <h3>Tracciamento del ciclo</h3>
+                        <p>Registra l'inizio e la fine del tuo ciclo con pochi tap. L'app calcola automaticamente la durata media e prevede i prossimi cicli.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Registro sintomi</h3>
+                        <p>Annota i tuoi sintomi quotidiani: umore, dolori, energia e molto altro. Tutto organizzato in una timeline chiara.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Statistiche e insight</h3>
+                        <p>Visualizza le tendenze del tuo ciclo con grafici intuitivi. Scopri pattern e correlazioni nel tempo.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Sincronizzazione iCloud</h3>
+                        <p>I tuoi dati si sincronizzano automaticamente tra i tuoi dispositivi Apple tramite il tuo account iCloud personale.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section style="text-align: center;">
+                <h2>Scarica Diario Ciclo Mestruale</h2>
+                <p style="max-width: none;">Disponibile gratuitamente su App Store</p>
+                <a href="https://apps.apple.com/us/app/diario-ciclo-mestruale/id6758266541" class="btn" target="_blank" rel="noopener" aria-label="Scarica su App Store">
+                    Scarica su App Store
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Fabrizio Di Pietro. Tutti i diritti riservati.</p>
+        <p>Fatto con cura in Italia</p>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Termini di Servizio</a>
+            <a href="support.html">Supporto</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+</body>
+</html>
