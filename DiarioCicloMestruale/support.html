@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Supporto Diario Ciclo Mestruale. Hai domande? Siamo qui per aiutarti.">
+    <meta name="author" content="Fabrizio Di Pietro">
+    <meta name="robots" content="index, follow">
+
+    <title>Supporto - Diario Ciclo Mestruale</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Supporto - Diario Ciclo Mestruale">
+    <meta property="og:description" content="Hai domande su Diario Ciclo Mestruale? Consulta le FAQ o contattaci.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* FAQ Accordion Styles */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: var(--spacing-md);
+            background: var(--bg-color);
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--primary-light);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: var(--bg-card);
+        }
+
+        .faq-answer-content {
+            padding: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        /* Contact Form Styles */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .contact-method {
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+
+        .contact-method .icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <select id="lang-selector" aria-label="Seleziona lingua" onchange="if(this.value==='en')window.location='support-en.html'">
+            <option value="it" selected>🇮🇹 Italiano</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Diario Ciclo Mestruale</h1>
+        <p class="subtitle">Supporto</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="privacy.html" data-i18n="nav.privacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="nav.terms">Termini di Servizio</a></li>
+            <li><a href="support.html" data-i18n="nav.support">Supporto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <article class="main-content">
+            <section>
+                <h2>Come possiamo aiutarti?</h2>
+                <p>
+                    Hai domande su Diario Ciclo Mestruale? Consulta le domande frequenti qui sotto o
+                    contattaci direttamente. Siamo qui per aiutarti!
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- FAQ Section -->
+            <section id="faq">
+                <h2>Domande Frequenti (FAQ)</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        I miei dati sono al sicuro?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Assolutamente sì! I tuoi dati vengono salvati solo sul tuo
+                                dispositivo e, se attivi la sincronizzazione, nel tuo account
+                                iCloud personale. Non abbiamo server, non raccogliamo dati e
+                                non possiamo in alcun modo accedere alle tue informazioni.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Come funziona la sincronizzazione iCloud?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Se hai iCloud attivo sul tuo dispositivo e hai abilitato la
+                                sincronizzazione per Diario Ciclo Mestruale, i tuoi dati verranno automaticamente
+                                sincronizzati tra tutti i tuoi dispositivi Apple collegati allo
+                                stesso Apple ID. Puoi gestire questa impostazione in:
+                            </p>
+                            <p>
+                                <strong>Impostazioni → [Il tuo nome] → iCloud → Diario Ciclo Mestruale</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Posso usare Diario Ciclo Mestruale come metodo contraccettivo?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                <strong>No, assolutamente no.</strong> Diario Ciclo Mestruale è uno strumento di
+                                monitoraggio personale e non deve essere utilizzata come metodo
+                                contraccettivo o per pianificare/evitare gravidanze. Le previsioni
+                                del ciclo sono stime e possono non essere accurate. Per questioni
+                                di contraccezione, consulta sempre un medico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Come posso eliminare tutti i miei dati?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>Per eliminare i dati locali:</p>
+                            <ol>
+                                <li>Disinstalla l'app dal tuo dispositivo</li>
+                            </ol>
+                            <p>Per eliminare anche i dati su iCloud:</p>
+                            <ol>
+                                <li>Vai in <strong>Impostazioni → [Il tuo nome] → iCloud → Gestisci spazio account</strong></li>
+                                <li>Trova Diario Ciclo Mestruale e tocca <strong>Elimina dati</strong></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Posso esportare i miei dati?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Sì! Diario Ciclo Mestruale ti permette di esportare i tuoi dati in formato PDF.
+                                Puoi usare questa funzione per condividere il tuo storico con
+                                il tuo medico o semplicemente per conservare un backup dei
+                                tuoi dati.
+                            </p>
+                            <p>
+                                Per esportare, vai nelle <strong>Impostazioni</strong> dell'app
+                                e cerca l'opzione <strong>Esporta dati</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Le previsioni del ciclo sono accurate?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Diario Ciclo Mestruale calcola le previsioni basandosi sui dati dei tuoi cicli
+                                precedenti. Più dati inserisci, più accurate saranno le previsioni.
+                                Tuttavia, ogni corpo è diverso e molti fattori possono influenzare
+                                il ciclo (stress, viaggi, cambiamenti nello stile di vita, ecc.).
+                            </p>
+                            <p>
+                                Considera le previsioni come <strong>stime indicative</strong>,
+                                non come certezze.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        L'app funziona offline?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Sì! Diario Ciclo Mestruale funziona completamente offline. Non hai bisogno di
+                                una connessione Internet per registrare dati, visualizzare
+                                statistiche o ricevere notifiche. L'unica funzione che richiede
+                                connessione è la sincronizzazione iCloud, che avviene automaticamente
+                                quando sei online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Come imposto i promemoria?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Puoi configurare i promemoria nelle <strong>Impostazioni</strong>
+                                dell'app. Diario Ciclo Mestruale può inviarti notifiche per:
+                            </p>
+                            <ul>
+                                <li>Ricordarti di registrare i sintomi quotidiani</li>
+                                <li>Avvisarti dell'arrivo previsto del prossimo ciclo</li>
+                                <li>Promemoria personalizzati</li>
+                            </ul>
+                            <p>
+                                Assicurati di aver autorizzato le notifiche quando richiesto
+                                dall'app.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contattaci</h2>
+                <p>
+                    Non hai trovato la risposta che cercavi? Contattaci e ti risponderemo
+                    il prima possibile.
+                </p>
+
+                <div class="contact-methods">
+                    <div class="card contact-method">
+                        <div class="icon">📧</div>
+                        <h3>Email</h3>
+                        <p>Scrivici per qualsiasi domanda o suggerimento</p>
+                        <a href="mailto:support@pediary.net" class="btn">
+                            support@pediary.net
+                        </a>
+                    </div>
+
+                    <div class="card contact-method">
+                        <div class="icon">⭐</div>
+                        <h3>Recensione</h3>
+                        <p>Ti piace Diario Ciclo Mestruale? Lascia una recensione su App Store!</p>
+                        <a href="https://apps.apple.com/us/app/diario-ciclo-mestruale/id6758266541?action=write-review" class="btn" target="_blank" rel="noopener">
+                            Valuta l'App
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Response Time -->
+            <section>
+                <div class="info-box">
+                    <h3>Tempi di risposta</h3>
+                    <p>
+                        Cerchiamo di rispondere a tutte le email entro <strong>48 ore</strong>
+                        lavorative. Per questioni urgenti, indica "URGENTE" nell'oggetto
+                        dell'email.
+                    </p>
+                    <p>
+                        Quando ci contatti, includi:
+                    </p>
+                    <ul>
+                        <li>Il modello del tuo dispositivo (es. iPhone 15)</li>
+                        <li>La versione di iOS installata</li>
+                        <li>La versione dell'app Diario Ciclo Mestruale</li>
+                        <li>Una descrizione dettagliata del problema</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-i18n="footer.copyright" data-i18n-params='{"year": "2025"}'>© 2025 Fabrizio Di Pietro. Tutti i diritti riservati.</p>
+        <p data-i18n="footer.madeWith">Fatto con ❤️ in Italia</p>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Termini di Servizio</a>
+            <a href="support.html">Supporto</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+
+                // Toggle current FAQ
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

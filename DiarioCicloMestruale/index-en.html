@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diario Ciclo Mestruale. The app to track your menstrual cycle with respect for your privacy.">
+    <meta name="author" content="Fabrizio Di Pietro">
+    <meta name="robots" content="index, follow">
+
+    <title>Diario Ciclo Mestruale</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Diario Ciclo Mestruale">
+    <meta property="og:description" content="Track your menstrual cycle with respect for your privacy. Your data stays on your device.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <select id="lang-selector" aria-label="Select language" onchange="if(this.value==='it')window.location='index.html'">
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="en" selected>🇬🇧 English</option>
+        </select>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="img/app-icon.png" alt="Diario Ciclo Mestruale App Icon" class="app-icon" onerror="this.style.display='none'">
+        <h1>Diario Ciclo Mestruale</h1>
+        
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="privacy-en.html">Privacy Policy</a></li>
+            <li><a href="terms-en.html">Terms of Service</a></li>
+            <li><a href="support-en.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <article class="main-content">
+            <section>
+                <h2>Your health, your privacy</h2>
+                <p>
+                    Diario Ciclo Mestruale is the app designed for you to track your menstrual cycle
+                    in a simple, intuitive, and completely private way.
+                </p>
+
+                <div class="card card-highlight">
+                    <h3>🔒 Privacy First</h3>
+                    <p>
+                        Your data never leaves your device. We have no servers,
+                        we don't collect information, we don't sell anything. Your data
+                        is yours alone.
+                    </p>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section>
+                <h2>Key Features</h2>
+
+                <div class="card">
+                    <h3>📅 Cycle Tracking</h3>
+                    <p>Record the start and end of your cycle with just a few taps. Diario Ciclo Mestruale automatically calculates the average duration and predicts your next cycles.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📝 Symptom Logging</h3>
+                    <p>Note your daily symptoms: mood, pain, energy, and much more. Everything organized in a clear timeline.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 Statistics and Insights</h3>
+                    <p>View your cycle trends with intuitive charts. Discover patterns and correlations over time.</p>
+                </div>
+
+                <div class="card">
+                    <h3>☁️ iCloud Sync</h3>
+                    <p>Your data automatically syncs between your Apple devices through your personal iCloud account.</p>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section style="text-align: center;">
+                <h2>Download Diario Ciclo Mestruale</h2>
+                <p>Available for free on the App Store</p>
+                <a href="https://apps.apple.com/us/app/diario-ciclo-mestruale/id6758266541" class="btn" target="_blank" rel="noopener" aria-label="Download on App Store">
+                    Download on App Store
+                </a>
+                <!-- Uncomment when app is live:
+                <a href="https://apps.apple.com/app/diario-ciclo-mestruale-cycle-diary" target="_blank" rel="noopener">
+                    <img src="img/app-store-badge.svg" alt="Download on App Store" class="app-store-badge">
+                </a>
+                -->
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Fabrizio Di Pietro. All rights reserved.</p>
+        <p>Made with ❤️ in Italy</p>
+        <div class="footer-links">
+            <a href="privacy-en.html">Privacy Policy</a>
+            <a href="terms-en.html">Terms of Service</a>
+            <a href="support-en.html">Support</a>
+        </div>
+    </footer>
+</body>
+</html>
