@@ -1,5 +1,5 @@
 /**
- * DiarioCicloMestruale - Internationalization (i18n) System
+ * Diario Ciclo e Calendario - Internationalization (i18n) System
  * Simple, lightweight multi-language support
  */
 

@@ -1,6 +1,6 @@
-# Luna - Website
+# Diario Ciclo e Calendario - Website
 
-Website for Luna - Menstrual Cycle Diary iOS app.
+Website for Diario Ciclo e Calendario iOS app.
 
 ## Structure
 
@@ -74,4 +74,4 @@ Add the URLs in App Store Connect:
 
 ## License
 
-All rights reserved. This website content is part of the Luna app project.
+All rights reserved. This website content is part of the Diario Ciclo e Calendario app project.
