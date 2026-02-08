@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Countdown - Day Counter Widget Support. Have questions? We're here to help.">
+    <meta name="author" content="Fabrizio Di Pietro">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5E5CE6">
+
+    <title>Support - Countdown - Day Counter Widget</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Support - Countdown - Day Counter Widget">
+    <meta property="og:description" content="Have questions about Countdown? Check our FAQ or contact us.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* FAQ Accordion Styles */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: var(--spacing-md);
+            background: var(--bg-color);
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--accent-color);
+        }
+
+        .faq-question:focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: -3px;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: var(--bg-card);
+        }
+
+        .faq-answer-content {
+            padding: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        /* Contact Methods Styles */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .contact-method {
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+
+        .contact-method .icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <select id="lang-selector" aria-label="Select language" onchange="if(this.value==='it')window.location='support.html'">
+            <option value="it">Italiano</option>
+            <option value="en" selected>English</option>
+        </select>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Countdown - Day Counter Widget</h1>
+            <p class="subtitle">Support</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-links">
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="privacy-en.html">Privacy Policy</a></li>
+            <li><a href="terms-en.html">Terms of Service</a></li>
+            <li><a href="support-en.html" aria-current="page">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <article class="main-content">
+            <section>
+                <h2>How can we help you?</h2>
+                <p>
+                    Have questions about Countdown - Day Counter Widget? Check out the frequently asked questions below or
+                    contact us directly. We're here to help!
+                </p>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- FAQ Section -->
+            <section id="faq">
+                <h2>Frequently Asked Questions (FAQ)</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is my data safe?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Absolutely! Your data is saved only on your
+                                device and, if you enable sync, in your personal
+                                iCloud account. We have no servers, we don't collect data, and
+                                we cannot access your information in any way.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How does iCloud sync work?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                If you have iCloud enabled on your device and have enabled
+                                sync for Countdown, your data will automatically
+                                sync between all your Apple devices connected to the
+                                same Apple ID. You can manage this setting in:
+                            </p>
+                            <p>
+                                <strong>Settings &rarr; [Your Name] &rarr; iCloud &rarr; Countdown</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I add a widget to my Home Screen?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>To add a Countdown widget:</p>
+                            <ol>
+                                <li>Long press on an empty area of the Home Screen</li>
+                                <li>Tap the <strong>+</strong> button in the top left</li>
+                                <li>Search for "Countdown" in the widget list</li>
+                                <li>Choose your preferred widget size</li>
+                                <li>Tap <strong>Add Widget</strong></li>
+                            </ol>
+                            <p>
+                                You can also customize the widget by long pressing on it
+                                and selecting <strong>Edit Widget</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How can I delete all my data?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>To delete local data:</p>
+                            <ol>
+                                <li>Uninstall the app from your device</li>
+                            </ol>
+                            <p>To also delete iCloud data:</p>
+                            <ol>
+                                <li>Go to <strong>Settings &rarr; [Your Name] &rarr; iCloud &rarr; Manage Account Storage</strong></li>
+                                <li>Find Countdown and tap <strong>Delete Data</strong></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I set up notifications for an event?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                When you create or edit an event, you can configure custom
+                                reminders. The app allows you to set notifications at different
+                                intervals before the event (e.g., 1 day before, 1 week before, etc.).
+                            </p>
+                            <p>
+                                Make sure you have authorized notifications when prompted
+                                by the app. You can check in:
+                            </p>
+                            <p>
+                                <strong>Settings &rarr; Notifications &rarr; Countdown</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Does the app work offline?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Yes! Countdown works completely offline. You don't need an
+                                Internet connection to create events, view
+                                countdowns, or receive notifications. The only feature that requires
+                                a connection is iCloud sync, which happens automatically
+                                when you're online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I create countdowns for recurring events?
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            <p>
+                                Yes! You can create countdowns for recurring events like birthdays
+                                and anniversaries. The app will automatically calculate the countdown
+                                to the next occurrence of the event.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>
+                    Didn't find the answer you were looking for? Contact us and we'll respond
+                    as soon as possible.
+                </p>
+
+                <div class="contact-methods">
+                    <div class="card contact-method">
+                        <div class="icon" aria-hidden="true">&#9993;</div>
+                        <h3>Email</h3>
+                        <p>Write to us for any questions or suggestions</p>
+                        <a href="mailto:support@pediary.net" class="btn">
+                            support@pediary.net
+                        </a>
+                    </div>
+
+                    <div class="card contact-method">
+                        <div class="icon" aria-hidden="true">&#9733;</div>
+                        <h3>Review</h3>
+                        <p>Do you like Countdown? Leave a review on the App Store!</p>
+                        <a href="https://apps.apple.com/app/countdown-day-counter-widget/id6758900411?action=write-review" class="btn" target="_blank" rel="noopener">
+                            Rate the App
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Response Time -->
+            <section>
+                <div class="info-box">
+                    <h3>Response Times</h3>
+                    <p>
+                        We try to respond to all emails within <strong>48 business hours</strong>.
+                        For urgent matters, indicate "URGENT" in the
+                        email subject line.
+                    </p>
+                    <p>
+                        When contacting us, please include:
+                    </p>
+                    <ul>
+                        <li>Your device model (e.g., iPhone 16)</li>
+                        <li>The iOS version installed</li>
+                        <li>The Countdown app version</li>
+                        <li>A detailed description of the issue</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Fabrizio Di Pietro. All rights reserved.</p>
+        <p>Made with care in Italy</p>
+        <div class="footer-links">
+            <a href="privacy-en.html">Privacy Policy</a>
+            <a href="terms-en.html">Terms of Service</a>
+            <a href="support-en.html">Support</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+
+                // Toggle current FAQ
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

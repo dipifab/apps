@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Countdown - Conta Giorni. L'app per tenere il conto alla rovescia dei tuoi eventi importanti. I tuoi dati restano sul tuo dispositivo.">
+    <meta name="author" content="Fabrizio Di Pietro">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5E5CE6">
+
+    <title>Countdown - Conta Giorni | Il conto alla rovescia per i tuoi eventi</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Countdown - Conta Giorni">
+    <meta property="og:description" content="Tieni il conto alla rovescia per i tuoi eventi importanti. I tuoi dati restano sul tuo dispositivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/og-image.png">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Countdown - Conta Giorni">
+    <meta name="twitter:description" content="Tieni il conto alla rovescia per i tuoi eventi importanti.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <select id="lang-selector" aria-label="Seleziona lingua" onchange="if(this.value==='en')window.location='index-en.html'">
+            <option value="it" selected>Italiano</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <!-- Header / Hero Section -->
+    <header class="header">
+        <div class="header-content">
+            <!-- App Badge -->
+            <div class="app-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd" />
+                </svg>
+                Il tuo conto alla rovescia
+            </div>
+
+            <img src="img/app-icon.png" alt="Countdown - Conta Giorni" class="app-icon" onerror="this.style.display='none'">
+            <h1>Countdown - Conta Giorni</h1>
+            <p class="subtitle">Ogni momento conta.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Navigazione principale">
+        <ul class="nav-links">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Termini di Servizio</a></li>
+            <li><a href="support.html">Supporto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Trust Badges Section -->
+    <section class="social-proof" aria-label="Punti di forza">
+        <div class="social-proof-inner">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128274;</span>
+                    <span class="trust-badge-label">Nessun account</span>
+                    <span class="trust-badge-value">richiesto</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128225;</span>
+                    <span class="trust-badge-label">100% Offline</span>
+                    <span class="trust-badge-value">funziona senza internet</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#9940;</span>
+                    <span class="trust-badge-label">Senza pubblicita</span>
+                    <span class="trust-badge-value">nessuna ads</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128065;</span>
+                    <span class="trust-badge-label">Nessun tracciamento</span>
+                    <span class="trust-badge-value">no analytics</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="trust-badge-icon" aria-hidden="true">&#128737;</span>
+                    <span class="trust-badge-label">Dati solo tuoi</span>
+                    <span class="trust-badge-value">mai condivisi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <article class="main-content">
+            <section>
+                <h2>I tuoi eventi, la tua privacy</h2>
+                <p>
+                    Countdown - Conta Giorni ti permette di tenere il conto alla rovescia per tutti
+                    i tuoi eventi importanti in modo semplice, elegante e completamente privato.
+                </p>
+
+                <div class="card card-highlight">
+                    <h3>Privacy al primo posto</h3>
+                    <p>
+                        I tuoi dati non lasciano mai il tuo dispositivo. Non abbiamo server,
+                        non raccogliamo informazioni, non vendiamo nulla. I tuoi dati sono
+                        solo tuoi.
+                    </p>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section>
+                <h2>Funzionalita principali</h2>
+
+                <div class="features-grid">
+                    <div class="card">
+                        <h3>Countdown multipli</h3>
+                        <p>Crea quanti countdown vuoi per compleanni, vacanze, anniversari, scadenze e qualsiasi evento importante.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Widget per la Home</h3>
+                        <p>Aggiungi i tuoi countdown direttamente alla schermata Home del tuo iPhone con widget eleganti e personalizzabili.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Notifiche e promemoria</h3>
+                        <p>Ricevi notifiche personalizzate per non perdere mai un evento importante. Imposta promemoria a intervalli personalizzati.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Sincronizzazione iCloud</h3>
+                        <p>I tuoi countdown si sincronizzano automaticamente tra i tuoi dispositivi Apple tramite il tuo account iCloud personale.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section style="text-align: center;">
+                <h2>Scarica Countdown - Conta Giorni</h2>
+                <p style="max-width: none;">Disponibile su App Store</p>
+                <a href="https://apps.apple.com/app/countdown-day-counter-widget/id6758900411" class="btn" target="_blank" rel="noopener" aria-label="Scarica su App Store">
+                    Scarica su App Store
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Fabrizio Di Pietro. Tutti i diritti riservati.</p>
+        <p>Fatto con cura in Italia</p>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Termini di Servizio</a>
+            <a href="support.html">Supporto</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+</body>
+</html>
