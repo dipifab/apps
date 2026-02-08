@@ -1,6 +1,6 @@
-# Diario Ciclo e Calendario - Website
+# Period Tracker - Website
 
-Website for Diario Ciclo e Calendario iOS app.
+Website for Period Tracker iOS app.
 
 ## Structure
 
@@ -74,4 +74,4 @@ Add the URLs in App Store Connect:
 
 ## License
 
-All rights reserved. This website content is part of the Diario Ciclo e Calendario app project.
+All rights reserved. This website content is part of the Period Tracker app project.

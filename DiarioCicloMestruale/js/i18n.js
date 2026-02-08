@@ -1,5 +1,5 @@
 /**
- * Diario Ciclo e Calendario - Internationalization (i18n) System
+ * Period Tracker - Internationalization (i18n) System
  * Simple, lightweight multi-language support
  */
 
@@ -51,17 +51,10 @@ const i18n = {
      * Initialize the i18n system
      */
     init() {
-        // Detect language from URL, localStorage, or browser
-        const urlLang = this.getLangFromURL();
-        const storedLang = localStorage.getItem('preferredLang');
-        const browserLang = navigator.language.split('-')[0];
-
-        if (urlLang && this.supportedLangs.includes(urlLang)) {
-            this.currentLang = urlLang;
-        } else if (storedLang && this.supportedLangs.includes(storedLang)) {
-            this.currentLang = storedLang;
-        } else if (this.supportedLangs.includes(browserLang)) {
-            this.currentLang = browserLang;
+        // Use the page's HTML lang attribute as source of truth
+        const pageLang = document.documentElement.lang;
+        if (pageLang && this.supportedLangs.includes(pageLang)) {
+            this.currentLang = pageLang;
         }
 
         this.applyTranslations();
